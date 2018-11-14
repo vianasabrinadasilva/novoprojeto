@@ -596,7 +596,7 @@ li a img{
 .rodape-prin span {
   
   float: left;
-  width:50%;
+  width:47.5%;
   line-height: 60px; /* Mesma altura do rodapé */
   margin-top: -5px;
   padding-left:5px;
@@ -605,6 +605,48 @@ li a img{
 
 
 }
+
+/**** PONTOS DE QUEBRAS DO VIDEO - 8º *****/
+@media (max-width: 470px){
+}
+	.icones-sociais ul {
+  display: inline-block;
+  height: inherit;
+  float: left;
+  width:5%;
+  margin-right: 0;
+  padding-right: 0;
+  left: -5px;
+
+}
+
+.icones-sociais li
+{
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    margin-top: -1px;
+    width: 1px;
+    height: inherit;
+    padding:1px;
+    padding-right:0;
+
+}
+.rodape-prin span {
+  
+  float: left;
+  width:47.5%;
+  line-height: 60px; /* Mesma altura do rodapé */
+  margin-top: -5px;
+  padding-left:5px;
+  
+}
+
+
+}
+
+
+
 
 /**** PONTOS DE QUEBRAS DO VIDEO - 9º *****/
 @media (max-width: 375px){
