@@ -1,0 +1,698 @@
+/** fonte **/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Patua+One');
+
+
+body{
+	margin: 0;
+	padding:0;
+	font-family: 'Noto Sans', sans-serif;
+	/*background: url(bg.jpg);
+	background-attachment: fixed;
+	background-position: center;*/
+}
+
+
+/**************************** MENU ***********************************/
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 100px;
+	background: #fff;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+header .logo{
+	color: #fff;
+	height: 50px;
+	line-height: 50px;
+	font-size: 24px;
+	float: left;
+	font-weight: bold; 
+	margin-top: 9px;
+}
+
+header nav{
+	float: right;
+}
+
+header nav ul{
+	margin: 0;
+	padding: 10px;
+	display: flex;
+}
+
+header nav ul li{
+	list-style: none;
+	position: relative;
+}
+
+header nav ul li.submenu:before{
+	content: '\f078';
+	font-family: fontAwesome;
+	position: absolute; 
+	line-height: 50px;
+	color: #f00;
+	right: 0px;
+}
+
+header nav ul li.active.submenu:before{
+	content: '\f077';
+}
+
+header nav ul li ul{
+	position: absolute;
+	left: 0;
+	background: pink;
+	display: none;
+}
+
+header ul ul li{
+	border-bottom: solid 1px #400;
+}
+
+header nav ul li.active ul{
+	display: block;
+}
+
+header nav ul li ul li{
+	display: block;
+	width: 200px;
+}
+
+header nav ul li a{
+	height: 50px;
+	line-height: 50px;
+	padding: 0 30px;
+	color: #000;
+	text-decoration: none;
+	display: block;
+}
+
+header nav ul li a:hover{
+	color: #800;
+	border-bottom: #800 2px solid ;
+}
+
+.menu-toggle{
+	color: #800;
+	float: right;
+	line-height: 50px;
+	font-size: 24px;
+	cursor: pointer;
+	display: none;
+}
+
+header.fixar{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+
+/*************************** FIM DO MENU ****************************/
+
+
+
+/**** MODIFICAÇÕES EM PÁGINAS ***/
+
+#livros{
+	background: url(../image/tordo.png); /* IMAGEM NO FUNDO */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+.video{
+	frameborder: 0;
+	width:560px; 
+	height: 315px;
+}
+
+.elementos{
+	text-align: center;
+}
+
+#filmes{
+	background: url(../image/tordopreto.png);  /* IMAGEM NO FUNDO */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #000;
+}
+
+/* ARRUMANDO OS "P" DE CADA PÁGINA */
+.paragrafo {
+      width: 74%;
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+}
+
+.paragrafo-hist {
+      width: 74%;
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+      margin-top: -60px;
+}
+
+.paragrafo-cont {
+      width: 74%;
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+      color: #000;
+      background: rgba(250,128,114,.8);
+      border-radius: 2%;
+}
+
+.paragrafo_video{
+	text-align: center;
+	font-size: 18px;
+	margin-top: -7px;
+	background: rgba(0,0,0,.9);
+	color: #fff;
+}
+
+
+.sobre-paragrafo{
+	text-align: center;
+	font-size: 20px;
+ 
+}
+/****** FIM DOS "P" ****/
+
+/*** COLOCANDO A IMAGEM AO LADO DO TEXTO ***/
+.conteudo{
+	display: table;
+	border-radius: 5%;
+	background: rgba(250,128,114,.8);
+	margin: 4em auto;
+}
+
+.imagem{
+	display: table-cell;
+	float: left;
+}
+
+
+
+.imagem img{
+	border-radius: 5%;
+}
+
+.texto{
+	display: table-cell;
+	float: left;
+	width: 300px;
+	margin-left: 20px;
+}
+
+
+/*** fim da imagem ao lado do texto ****/
+
+/***** blocos ****/
+#destaque{
+	max-width: 1024px;
+	height: 360px;
+}
+
+.blocos{
+	width: 25%; /* (315/1024)*100 */
+	height: 250px;
+	background-color: #f1f1f1;
+	float: left;
+	margin-left: 0.97%; /* (20px/1024px)*100 */
+	border: 1px solid  #000;
+	position: relative; /*posicionamento do botão*/ 
+	margin-left: 75px;
+	margin-top: 20px;
+	left: 10%;
+	text-align: center;
+}
+
+.blocos p{
+	/**padding: 0px 10px 0px 10px;
+	text-align: center;
+	top: 20px;**/
+}
+
+.blocos img{
+	width: 128px;
+	height: 128px;
+	padding-top: 50px;
+}
+
+
+/* ARRUMANDO OS TITULOS E OS SUBTITULOS ***/
+h1, h2{
+	margin: 80px; 
+	text-align: center;
+	font-family: 'Noto Sans', sans-serif;
+	color: #800;
+}
+h3{
+	font-family:'Noto Sans', sans-serif;
+	color: #f00;
+	width: 64%;
+    margin: 4em auto;
+    text-align: justify;
+}
+
+b{
+	color: #800;
+}
+
+.h2{
+	color: #fff;
+	background: rgba(0,0,0,.9);
+}
+
+
+.h1{
+	background:rgba(250,128,114,.8);
+	width: 50%;
+	margin: 4em auto;
+}
+
+.negrito{
+	color: #f00;
+}
+
+/***** fim dos titulos e subtitulos **/
+
+
+/***** IMAGENS DAS PAGINAS ******/
+.jv{
+	text-align: center;
+
+}
+
+.foto img{
+	width: 1024px;
+	height: 500px;
+	border-radius: 25%;
+	}
+.foto{
+	text-align: center;
+}
+
+.personagens img{
+	width: 300px; /*largura das imagens*/
+	height: 300px; /*altura das imagens*/
+	border-radius: 50%;
+}
+/***** FIM DASIMAGENS DAS PAGINAS ******/
+
+
+/*********** ALINHANDO ELEMENTOS ************/
+.livro{
+	text-align: center;
+}
+
+.filme{
+	text-align: center;
+}
+
+/*********** FIM DO ALINHAMENTO ************/
+
+/***** Formulário de Contato *****/
+#contato{
+	padding-top: 80px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+#contato input[type=text]{
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #f00;
+	margin-bottom: 20px;
+}
+
+#contato textarea{
+	width: 100%;
+	padding: 10px 10px 40px 10px;
+	border-radius: 5px;
+	border: 1px solid #f00;
+	margin-bottom: 20px;
+	resize: none;
+}
+
+#contato input[type=submit]{
+	background-color: #800;
+	border-radius: 5px;
+	border: 1px solid #000;
+	padding: 10px 25px 10px 25px;
+	color: #fff;
+}
+
+/*********** FIM DO CONTATO ************/
+
+/******* REDES SOCIAIS DENTRO DO FOOTER *******/
+.rodape-prin
+{
+    background-color: #800;       
+    clear: both;
+    height: 60px;      
+    color: #fff;
+    font-size: 18px;
+    font-family: "arial", sans-serif;
+
+}
+
+.rodape-prin span {
+  
+  float: left;
+  width:45%;
+  line-height: 60px; /* Mesma altura do rodapé */
+  margin-top: -5px;
+  padding-left: 30%;
+  
+}
+
+.icones-sociais ul {
+  
+  display: inline-block;
+  height: inherit;
+  float: left;
+  width: 75%;
+  margin: 0;
+  line-height: 60px;
+
+}
+
+.icones-sociais li
+{
+    display: inline-block;
+    float: left;
+    margin-left: 5px;
+    margin-top: 7px;
+    width: 40px;
+    height: inherit;
+}
+
+.icones-sociais li:hover{
+	transform: translateY(-10px);
+ box-shadow: 4px 30px 16px 0px rgba(255,0,0, 0.2);
+}
+
+li a img{
+	width: 28px;
+	height: 28px;
+}
+
+/******** FIM DAS REDES SOCIAIS ***************/
+	/***** RODAPÉ *****/
+	footer{
+		width: 100%;
+		background-color: #800;
+		margin-top:12.2%;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		color: #fff;
+		font-size: 1.1em;
+		z-index: 999;
+
+			}
+
+	/**** FIM DO RODAPÉ ****/
+
+
+
+
+
+
+/**** PONTOS DE QUEBRAS - 1º *****/
+@media (max-width: 800px){
+		.jv img{
+		 max-width: 600px;   /* Máximo da largura da imagem */
+          width: 100%;
+          max-height: 500px;  /* Máximo da altura da imagem */
+          min-height: auto;      /* Mínimo da altura, por padrão “auto” */
+          background-size:100%;
+          background-repeat: no-repeat;
+	}
+	.foto img{
+		 max-width: 600px;   /* Máximo da largura da imagem */
+          width: 100%;
+          max-height: 500px;  /* Máximo da altura da imagem */
+          min-height: auto;      /* Mínimo da altura, por padrão “auto” */
+          background-size:100%;
+          background-repeat: no-repeat;
+      }
+
+      .livro img{
+      	 max-width: 600px;   /* Máximo da largura da imagem */
+          width: 100%;
+          max-height: 500px;  /* Máximo da altura da imagem */
+          min-height: auto;      /* Mínimo da altura, por padrão “auto” */
+          background-size:100%;
+          background-repeat: no-repeat;
+	
+}
+      .filme img{
+      	 max-width: 600px;   /* Máximo da largura da imagem */
+          width: 100%;
+          max-height: 500px;  /* Máximo da altura da imagem */
+          min-height: auto;      /* Mínimo da altura, por padrão “auto” */
+          background-size:100%;
+          background-repeat: no-repeat;
+	
+}
+}
+
+/**** PONTOS DE QUEBRAS - 2º *****/
+@media (max-width: 868px){
+		.jv img{
+		max-width: 750px;   /* Máximo da largura da imagem */
+        width: 100%;
+        max-height: 500px;  /* Máximo da altura da imagem */
+        min-height: auto;      /* Mínimo da altura, por padrão “auto” */
+        background-size:100%;
+        background-repeat: no-repeat;
+	}
+		.foto img{
+		max-width: 750px;   /* Máximo da largura da imagem */
+        width: 100%;
+        max-height: 500px;  /* Máximo da altura da imagem */
+        min-height: auto;      /* Mínimo da altura, por padrão “auto” */
+        background-size:100%;
+        background-repeat: no-repeat;
+	}
+}
+/**** PONTOS DE QUEBRAS - 3º *****/
+@media (max-width: 1039px){
+		.foto img{
+		max-width: 950px;   /* Máximo da largura da imagem */
+        width: 100%;
+        max-height: 500px;  /* Máximo da altura da imagem */
+        min-height: auto;      /* Mínimo da altura, por padrão “auto” */
+        background-size:100%;
+        background-repeat: no-repeat;
+	}	
+}
+
+/**** PONTOS DE QUEBRAS DO VIDEO - 4º *****/
+@media (max-width: 500px){
+	.video{
+		width: 400px;
+		height: 250px;
+	}
+
+}
+
+/**** PONTOS DE QUEBRAS DO VIDEO - 5º *****/
+
+@media (max-width: 480px){
+.icones-sociais ul {
+  display: inline-block;
+  height: inherit;
+  float: left;
+  width:100%;
+  margin-right: 45%;
+
+}
+
+.icones-sociais li
+{
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    margin-top: -1px;
+    width: 1px;
+    height: inherit;
+    padding:1px;
+    padding-right:0;
+
+}
+.rodape-prin span {
+  
+  float: left;
+  width:60%;
+  line-height: 60px; /* Mesma altura do rodapé */
+  margin-top: -5px;
+  padding-left: 10px;
+  
+}
+
+}
+
+/**** PONTOS DE QUEBRAS DO VIDEO - 6º *****/
+
+@media (max-width: 600px){
+	.video{
+		width: 450px;
+		height: 350px;
+	}
+}
+
+/**** PONTOS DE QUEBRAS DO VIDEO - 7º *****/
+@media (max-width: 390px){
+	.video{
+		width: 350px;
+		height: 180px;
+	}
+}
+
+/**** PONTOS DE QUEBRAS DO VIDEO - 8º *****/
+@media (max-width: 420px){
+	.video{
+		width: 390px;
+		height: 190px;
+	}
+	.icones-sociais ul {
+  display: inline-block;
+  height: inherit;
+  float: left;
+  width:5%;
+  margin-right: 0;
+  padding-right: 0;
+  left: -5px;
+
+}
+
+.icones-sociais li
+{
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    margin-top: -1px;
+    width: 1px;
+    height: inherit;
+    padding:1px;
+    padding-right:0;
+
+}
+.rodape-prin span {
+  
+  float: left;
+  width:50%;
+  line-height: 60px; /* Mesma altura do rodapé */
+  margin-top: -5px;
+  padding-left:5px;
+  
+}
+
+
+}
+
+/**** PONTOS DE QUEBRAS DO VIDEO - 9º *****/
+@media (max-width: 375px){
+	.video{
+		width: 290px;
+		height: 190px;
+	}
+}
+/**** PONTOS DE QUEBRAS DO VIDEO - 10º *****/
+@media (max-width: 1024px){
+	.blocos{
+		margin-left:22px;
+	}
+
+}
+@media (max-width: 1200px){
+	.blocos{
+		margin-left:22px;
+	}
+
+}
+
+/******** TRATAMENTO RESPONSIVO **********/
+@media (max-width: 991px){
+	header{
+		padding: 0 20px;
+	}
+
+	header .logo{
+		left: 0;
+		top: 0;
+		margin-top: 0;
+	}
+
+	.menu-toggle{
+		display: block;
+	}
+	header nav {
+		position: absolute;
+		width: 100%;
+		height: calc(100vh - 50px);
+		background: #ccc;
+		top: 50px;
+		left: -100%;
+		transition: 0.5s;
+	}
+	header nav.active{
+		left: 0;
+	}
+	header nav ul{
+		display: block;
+		text-align: center;
+	}
+	header nav ul li a{
+		border-bottom: 1px solid rgba(0,0,0,.2);
+	}
+	header nav ul li.active ul{
+		position: relative;
+		left: 0;
+		background: #FF6347;
+	}
+	header nav ul li ul li{
+		width: 100%;
+	}
+.icones-sociais li{
+    display: inline-block;
+    float: left;
+    margin-left: 3px;
+    margin-top: 4px;
+    width: 30px;
+    height: inherit;
+}
+	/**** blocos ****/
+#destaque{
+	max-width: 315px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.blocos{
+	width: 70%;
+	height: 200px;
+	float: none;
+	margin: 0;
+	margin-bottom: 20px;
+	left: 40px;
+
+}
+
+
+}
