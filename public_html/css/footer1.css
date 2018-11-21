@@ -1,13 +1,13 @@
 /******* REDES SOCIAIS *******/
-.rodape-prin2
-{
+.rodape-prin2{
+
     background-color: #800;       
     clear: both;
     height: 60px;      
     color: #fff;
     font-size: 20px;
     font-family: "arial", sans-serif;
-  width: 100%;
+    width: 100%;
 
 }
 
@@ -29,7 +29,6 @@
   width: 40%;
   margin: 0;
   line-height: 60px;
-
 }
 
 .icones-sociais2 li

@@ -12,6 +12,34 @@ body{
 	background-position: center;*/
 }
 
+/******* BOTÃO INDEX ************/
+article{
+	margin: 50px;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+article a{
+	padding: 13px 20px;
+	border: 3px solid #f00;
+	text-decoration: none;
+	margin: 15px;
+	color: #fff;
+	border-radius: 50px;
+	font-size: 16px;
+	transition: .3s;
+	background: #f00;
+}
+
+article a:hover{
+	color: #ccc;
+	background: #800;
+	font-weight: bold;
+	font-size: 18px;
+	box-shadow: 0 3px 25px #000;
+	border: #800;
+	border-bottom: 4px solid #f00;
+}
+
 
 /**************************** MENU ***********************************/
 header{
@@ -163,12 +191,28 @@ header.fixar{
       margin-top: -60px;
 }
 
+.paragrafo-home {
+      width: 74%;
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+      margin-top: -60px;
+      background: rgba(250,128,114,.4);
+}
+
+a{
+	text-decoration: none;
+	color: #800;
+}
+
 .paragrafo-cont {
       width: 74%;
       margin: 4em auto;
       font-size: 20px;
       line-height: 30px;
       text-align: justify;
+      padding: 18px;
       color: #000;
       background: rgba(250,128,114,.8);
       border-radius: 2%;
@@ -180,6 +224,12 @@ header.fixar{
 	margin-top: -7px;
 	background: rgba(0,0,0,.9);
 	color: #fff;
+}
+
+.paragrafo-autora{
+	  width: 90%;
+      font-size: 20px;
+      text-align: justify;
 }
 
 
@@ -216,13 +266,36 @@ header.fixar{
 	margin-left: 20px;
 }
 
+/*** COLOCANDO A IMAGEM AO LADO DO TEXTO- NA HOME ***/
+
+.conteudo-autora{
+	display: table;
+	background: #f1f1f1;
+	margin: 4em auto;
+	border: 1px solid  #000;
+	margin-top: -60px;
+}
+
+.imagem-autora{
+	display: table-cell;
+	float: left;
+}
+
+
+.texto-autora{
+	display: table-cell;
+	float: left;
+	width: 400px;
+	margin-left: 20px;
+}
+
 
 /*** fim da imagem ao lado do texto ****/
 
 /***** blocos ****/
 #destaque{
 	max-width: 1024px;
-	height: 360px;
+	height: 170px;
 }
 
 .blocos{
@@ -251,6 +324,37 @@ header.fixar{
 	padding-top: 50px;
 }
 
+/***** blocos ****/
+#destaque-home{
+	max-width: 1024px;
+	height: 300px;
+}
+
+.blocos-home{
+	width: 30%; /* (315/1024)*100 */
+	height: 400px;
+	background-color: rgba(128,0,0,0.8);
+	float: left;
+	margin-left: 0.97%; /* (20px/1024px)*100 */
+	border: 1px solid  #000;
+	position: relative; /*posicionamento do botão*/ 
+	margin-left: 30px;
+	margin-top: 20px;
+	left: 10%;
+	text-align: center; 
+}
+
+.blocos-home p{
+	padding: 0px 10px 0px 10px;
+	text-align: center;
+	top: -15px;
+}
+
+.blocos-home img{
+	width: 256px;
+	height: 256px;
+	padding-top: 50px;
+}
 
 /* ARRUMANDO OS TITULOS E OS SUBTITULOS ***/
 h1, h2{
@@ -544,8 +648,8 @@ li a img{
   padding-left: 10px;
   
 }
-
 }
+
 
 /**** PONTOS DE QUEBRAS DO VIDEO - 6º *****/
 
@@ -561,6 +665,27 @@ li a img{
 	.video{
 		width: 350px;
 		height: 180px;
+	}
+}
+
+@media (max-width: 340px){
+article a{
+	padding: 5px 10px;
+
+	}
+}
+
+@media (max-width: 315px){
+article a{
+	padding: 2px 5px;
+
+	}
+}
+
+@media (max-width: 300px){
+article a{
+	padding: 1px 3px;
+
 	}
 }
 
@@ -606,7 +731,7 @@ li a img{
 
 }
 
-/**** PONTOS DE QUEBRAS DO VIDEO - 8º *****/
+/**** PONTOS DE QUEBRAS DO VIDEO - 9º *****/
 @media (max-width: 470px){
 }
 	.icones-sociais ul {
@@ -645,7 +770,7 @@ li a img{
 
 }
 
-/**** PONTOS DE QUEBRAS DO VIDEO - 8º *****/
+/**** PONTOS DE QUEBRAS DO VIDEO - 10º *****/
 @media (max-width: 383px){
 }
 	.icones-sociais ul {
@@ -682,7 +807,7 @@ li a img{
 
 }
 
-/**** PONTOS DE QUEBRAS DO VIDEO - 8º *****/
+/**** PONTOS DE QUEBRAS DO VIDEO - 11º *****/
 @media (max-width: 374px){
 }
 	.icones-sociais ul {
@@ -718,7 +843,7 @@ li a img{
 
 
 }
-/**** PONTOS DE QUEBRAS DO VIDEO - 8º *****/
+/**** PONTOS DE QUEBRAS DO VIDEO - 12º *****/
 @media (max-width: 360px){
 }
 	.icones-sociais ul {
@@ -756,29 +881,40 @@ li a img{
 }
 
 
-/**** PONTOS DE QUEBRAS DO VIDEO - 9º *****/
+/**** PONTOS DE QUEBRAS DO VIDEO - 13º *****/
 @media (max-width: 375px){
 	.video{
 		width: 290px;
 		height: 190px;
 	}
 }
-/**** PONTOS DE QUEBRAS DO VIDEO - 10º *****/
+/**** PONTOS DE QUEBRAS DO VIDEO - 14º *****/
 @media (max-width: 1024px){
 	.blocos{
 		margin-left:22px;
 	}
-
-}
-@media (max-width: 1200px){
-	.blocos{
+	.blocos-home{
 		margin-left:22px;
+		margin-top: -30px;
 	}
 
 }
+@media (max-width: 1200px){
+	.blocos-home{
+		margin-left:22px;
+		left: 20px;
+		margin-top: -20px;
+	}
+}
+
+@media (max-width: 1170px){
+	.blocos{
+		margin-left: 22px;
+	}
+}
 
 /******** TRATAMENTO RESPONSIVO **********/
-@media (max-width: 991px){
+@media (max-width: 1004px){
 	header{
 		padding: 0 20px;
 	}
@@ -843,6 +979,50 @@ li a img{
 	left: 40px;
 
 }
+
+	/**** blocos ****/
+#destaque-home{
+	max-width: 315px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.blocos-home{
+	width:105%;
+	height: 400px;
+	float: none;
+	margin: 0;
+	margin-bottom: 20px;
+	left: 40px;
+	margin-left: -48px;
+
+}
+.conteudo-autora{
+	display: table;
+	background: #f1f1f1;
+	margin: 4em auto;
+	border: 1px solid  #000;
+	margin-top: -60px;
+	width: 100px;
+}
+
+
+.imagem-autora img{
+	margin-left: 45px;
+}
+.imagem-autora{
+	display: table-cell;
+	float: left;
+}
+
+
+.texto-autora{
+	display: table-cell;
+	float: left;
+	width: 300px;
+	margin-left: 20px;
+}
+
 
 
 }

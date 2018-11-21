@@ -1,14 +1,14 @@
 /******* REDES SOCIAIS *******/
 .rodape-prin1
 {
-    background-color: rgba(255,0,0, 0.2);       
+    background-color: #000;       
     clear: both;
     height: 60px;      
     color: #fff;
     font-size: 20px;
     font-family: "arial", sans-serif;
-     position: fixed;
-  width: 100%;
+    position: fixed;
+    width: 100%;
 
 }
 
