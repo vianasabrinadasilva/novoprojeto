@@ -199,6 +199,7 @@ header.fixar{
       text-align: justify;
       margin-top: -60px;
       background: rgba(250,128,114,.4);
+      padding: 18px;
 }
 
 a{
@@ -340,7 +341,7 @@ a{
 	position: relative; /*posicionamento do botão*/ 
 	margin-left: 30px;
 	margin-top: 20px;
-	left: 10%;
+	left: 20%;
 	text-align: center; 
 }
 
